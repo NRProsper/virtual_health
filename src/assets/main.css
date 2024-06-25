@@ -1,0 +1,140 @@
+:root {
+  --vh-primary-blue: rgba(69, 143, 246, 1);
+  --vh-body-background: rgba(255, 255, 255, 1);
+  --vh-nav-text-focus: rgba(31, 21, 52, 1);
+  --vh-nav-text: rgba(31, 21, 52, 0.5);
+  --vh-body-text: rgba(125, 121, 135, 1);
+  --vh-headers: rgba(0, 0, 0, 1);
+}
+
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--vh-body-text);
+  font-size: 16px;
+  text-transform: capitalize;
+  /*height: 120vh;*/
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*Utils*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 0 1.5rem;*/
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+.bg-red {
+  background-color: red;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.btn {
+  padding: 6px 16px;
+  background: red;
+  border-radius: 18px;
+}
+
+.btn-primary {
+  background: var(--vh-primary-blue);
+  color: #ffffff;
+}
+
+.btn-outline {
+  border: 1px solid var(--vh-primary-blue);
+  color: var(--vh-primary-blue);
+  background: transparent;
+}
+
+/*Stryling*/
+header {
+  position: relative;
+  align-items: center;
+  height: 80px;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  padding: 8px 0;
+}
+
+.navigation .nav-links a {
+  color: var(--vh-nav-text);
+  padding: 4px 6px;
+  font-weight: 400;
+}
+
+.navigation .nav-links a.active {
+  color: var(--vh-nav-text-focus);
+  font-weight: 700;
+}
+
+.navigation .nav-links a:not(:last-of-type){
+  margin-right: 8px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
