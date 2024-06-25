@@ -37,7 +37,7 @@ img {
 .container {
   width: 100%;
   margin: 0 auto;
-  /*padding: 0 1.5rem;*/
+  padding: 0 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -60,13 +60,13 @@ img {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    /*max-width: 1140px;*/
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
+    /*max-width: 1320px;*/
   }
 }
 .flex {
@@ -110,7 +110,7 @@ header {
   position: relative;
   align-items: center;
   height: 80px;
-  background: transparent;
+  background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 

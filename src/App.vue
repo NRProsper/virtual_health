@@ -4,6 +4,7 @@ import Close from "vue-material-design-icons/Close.vue";
 
 import {onMounted, ref, watch} from "vue";
 import HomeView from "@/views/HomeView.vue";
+import Services from "@/components/Services.vue";
 
 const isOpen = ref(false);
 const toggleMenu = () => {
@@ -45,12 +46,14 @@ watch(isOpen, (newVal) => {
 
   <main>
     <HomeView />
+    <Services />
   </main>
 </template>
 
 <style scoped>
 @media only screen and (max-width: 768px) {
   .nav-links {
+    z-index: 9999;
     //display: none;
     position: absolute;
     top: 80px;
@@ -59,7 +62,7 @@ watch(isOpen, (newVal) => {
     height: calc(100vh -  80px);
     visibility: hidden;
     background: var(--vh-body-background);
-    width: 100vw;
+    //width: 100vw;
     //transition: all 0.3s ease-in-out;
 
     display: flex;
