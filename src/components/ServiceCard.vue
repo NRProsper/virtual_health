@@ -25,6 +25,11 @@ const props = defineProps({
   padding: 24px;
   //box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--vh-nav-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 0 var(--vh-nav-text);
 }
 
 .card img{
@@ -35,6 +40,7 @@ const props = defineProps({
 
 .card-bottom h3 {
   margin-bottom: 10px;
+  color: var(--vh-headers);
 }
 
 </style>

@@ -3,8 +3,11 @@ import Menu from "vue-material-design-icons/Menu.vue";
 import Close from "vue-material-design-icons/Close.vue";
 
 import {onMounted, ref, watch} from "vue";
-import HomeView from "@/views/HomeView.vue";
-import Services from "@/components/Services.vue";
+import Home from "@/views/Home.vue";
+import Services from "@/views/Services.vue";
+import LearnMore from "@/views/LearnMore.vue";
+import Download from "@/views/Download.vue";
+import Testimonials from "@/views/Testimonials.vue";
 
 const isOpen = ref(false);
 const toggleMenu = () => {
@@ -32,7 +35,7 @@ watch(isOpen, (newVal) => {
         <nav :class="['nav-links', {open : isOpen}]">
           <a href="#" class="active">Home</a>
           <a href="#">Find doctor</a>
-          <a href="#">Apps</a>
+          <a href="#download">Apps</a>
           <a href="#">Testimonials</a>
           <a href="#">Contact us</a>
         </nav>
@@ -45,8 +48,11 @@ watch(isOpen, (newVal) => {
   </header>
 
   <main>
-    <HomeView />
+    <Home />
     <Services />
+    <LearnMore />
+    <Download />
+    <Testimonials />
   </main>
 </template>
 

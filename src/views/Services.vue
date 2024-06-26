@@ -1,5 +1,6 @@
 <script setup>
 import ServiceCard from "@/components/ServiceCard.vue";
+import FancyButton from "@/components/FancyButton.vue";
 
 const services = [
   {
@@ -54,7 +55,9 @@ const services = [
         />
       </div>
       <div class="serv_cta">
-        <a href="" class="btn btn-outline">Learn more</a>
+        <FancyButton class="btn-outline">
+          Learn more
+        </FancyButton>
       </div>
     </div>
   </div>
@@ -76,7 +79,8 @@ const services = [
 }
 
 .services {
-  margin-top: 40px;
+  margin: 60px 0;
+  padding-bottom: 20px;
 }
 
 .services .top {
@@ -89,6 +93,7 @@ const services = [
 }
 
 .top h2 {
+  font-size: 2rem;
   color: var(--vh-headers);
   position: relative;
   padding: 8px 0;

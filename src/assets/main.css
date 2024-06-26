@@ -23,14 +23,25 @@ body {
   text-transform: capitalize;
   /*height: 120vh;*/
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
 }
 
+
 img {
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--vh-headers);
 }
 
 /*Utils*/
@@ -79,6 +90,13 @@ img {
   justify-content: space-between;
 }
 
+.left {
+  flex:1;
+}
+
+.right {
+  flex: 1;
+}
 
 .bg-red {
   background-color: red;
@@ -88,30 +106,13 @@ img {
   overflow: hidden;
 }
 
-.btn {
-  padding: 6px 16px;
-  background: red;
-  border-radius: 18px;
-}
-
-.btn-primary {
-  background: var(--vh-primary-blue);
-  color: #ffffff;
-}
-
-.btn-outline {
-  border: 1px solid var(--vh-primary-blue);
-  color: var(--vh-primary-blue);
-  background: transparent;
-}
-
 /*Stryling*/
 header {
   position: relative;
   align-items: center;
   height: 80px;
   background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
 }
 
 .navigation {
